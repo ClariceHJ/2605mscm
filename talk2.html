@@ -160,48 +160,70 @@ body { font-family: 'Noto Sans KR', sans-serif; background: #f8f9fa; overflow: h
     </div>
   </div>
 
-  <!-- 3: 설계 플로우 -->
+  <!-- 3: 설계 플로우 + 기술 스택 -->
   <div class="slide slide-3">
     <div class="slide-label">Design</div>
     <div class="slide-title">방치되는 순간 무의미해집니다.<br>그래서 마찰부터 없앴습니다.</div>
-    <div style="display:flex; flex-direction:column; gap:12px;">
-      <div style="display:flex; align-items:center; gap:20px; background:#f9fafb; border-radius:12px; padding:18px 24px;">
-        <div style="width:36px; height:36px; border-radius:50%; background:#eef2ff; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-          <span style="font-size:13px; font-weight:700; color:#6366f1;">1</span>
+    <div style="display:flex; flex-direction:column; gap:10px;">
+
+      <div style="display:flex; align-items:center; gap:16px; background:#eef2ff; border-radius:12px; padding:16px 20px; border:1px solid #c7d2fe;">
+        <div style="width:32px; height:32px; border-radius:50%; background:#6366f1; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <span style="font-size:14px;">🤖</span>
         </div>
         <div style="flex:1;">
-          <p style="font-size:15px; font-weight:700; color:#111827; margin-bottom:3px;">태블로 export</p>
-          <p style="font-size:13px; color:#6b7280; line-height:1.5;">활용도 100%의 데이터 구조 설계 — 태블로에서 내려받는 그대로 업로드 가능</p>
+          <p style="font-size:14px; font-weight:700; color:#4f46e5; margin-bottom:2px;">Claude Code — 전 과정 코파일럿</p>
+          <p style="font-size:12px; color:#6b7280;">설계, 구현, 디버깅 전 단계에 걸쳐 함께했습니다</p>
         </div>
       </div>
-      <div style="display:flex; align-items:center; gap:20px; padding:0 24px;">
-        <div style="width:36px; display:flex; justify-content:center; flex-shrink:0;">
-          <span style="color:#d1d5db; font-size:18px;">↓</span>
-        </div>
-      </div>
-      <div style="display:flex; align-items:center; gap:20px; background:#f9fafb; border-radius:12px; padding:18px 24px;">
-        <div style="width:36px; height:36px; border-radius:50%; background:#eef2ff; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-          <span style="font-size:13px; font-weight:700; color:#6366f1;">2</span>
+
+      <div style="display:flex; align-items:center; gap:16px; background:#f9fafb; border-radius:12px; padding:16px 20px;">
+        <div style="width:32px; height:32px; border-radius:50%; background:#eef2ff; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <span style="font-size:12px; font-weight:700; color:#6366f1;">1</span>
         </div>
         <div style="flex:1;">
-          <p style="font-size:15px; font-weight:700; color:#111827; margin-bottom:3px;">파일 업로드</p>
-          <p style="font-size:13px; color:#6b7280; line-height:1.5;">가공 업무 0 — 드래그앤드롭으로 끝. 별도 변환·정제 작업 없음</p>
+          <p style="font-size:14px; font-weight:700; color:#111827; margin-bottom:2px;">태블로 export</p>
+          <p style="font-size:12px; color:#6b7280;">활용도 100%의 데이터 구조 설계 — 내려받는 그대로 업로드 가능</p>
+        </div>
+        <span style="background:#e0e7ff; color:#4f46e5; font-size:11px; font-weight:600; padding:3px 10px; border-radius:20px; flex-shrink:0;">SheetJS</span>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:16px; padding:0 24px;">
+        <div style="width:32px; display:flex; justify-content:center; flex-shrink:0;">
+          <span style="color:#d1d5db; font-size:16px;">↓</span>
         </div>
       </div>
-      <div style="display:flex; align-items:center; gap:20px; padding:0 24px;">
-        <div style="width:36px; display:flex; justify-content:center; flex-shrink:0;">
-          <span style="color:#d1d5db; font-size:18px;">↓</span>
-        </div>
-      </div>
-      <div style="display:flex; align-items:center; gap:20px; background:#f9fafb; border-radius:12px; padding:18px 24px;">
-        <div style="width:36px; height:36px; border-radius:50%; background:#eef2ff; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-          <span style="font-size:13px; font-weight:700; color:#6366f1;">3</span>
+
+      <div style="display:flex; align-items:center; gap:16px; background:#f9fafb; border-radius:12px; padding:16px 20px;">
+        <div style="width:32px; height:32px; border-radius:50%; background:#eef2ff; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <span style="font-size:12px; font-weight:700; color:#6366f1;">2</span>
         </div>
         <div style="flex:1;">
-          <p style="font-size:15px; font-weight:700; color:#111827; margin-bottom:3px;">판정 실행</p>
-          <p style="font-size:13px; color:#6b7280; line-height:1.5;">버튼 하나로 전 품목 자동 판정 — 328개 품목, 판단 기준 일관 적용</p>
+          <p style="font-size:14px; font-weight:700; color:#111827; margin-bottom:2px;">파일 업로드 → DB 저장</p>
+          <p style="font-size:12px; color:#6b7280;">가공 업무 0 — 드래그앤드롭으로 끝</p>
+        </div>
+        <span style="background:#dcfce7; color:#15803d; font-size:11px; font-weight:600; padding:3px 10px; border-radius:20px; flex-shrink:0;">Supabase</span>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:16px; padding:0 24px;">
+        <div style="width:32px; display:flex; justify-content:center; flex-shrink:0;">
+          <span style="color:#d1d5db; font-size:16px;">↓</span>
         </div>
       </div>
+
+      <div style="display:flex; align-items:center; gap:16px; background:#f9fafb; border-radius:12px; padding:16px 20px;">
+        <div style="width:32px; height:32px; border-radius:50%; background:#eef2ff; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+          <span style="font-size:12px; font-weight:700; color:#6366f1;">3</span>
+        </div>
+        <div style="flex:1;">
+          <p style="font-size:14px; font-weight:700; color:#111827; margin-bottom:2px;">판정 실행 → 대시보드 표시</p>
+          <p style="font-size:12px; color:#6b7280;">328개 품목 자동 판정 — 기준 일관 적용</p>
+        </div>
+        <div style="display:flex; gap:6px; flex-shrink:0;">
+          <span style="background:#e0e7ff; color:#4f46e5; font-size:11px; font-weight:600; padding:3px 10px; border-radius:20px;">React + Vite</span>
+          <span style="background:#f3f4f6; color:#374151; font-size:11px; font-weight:600; padding:3px 10px; border-radius:20px;">GitHub Pages</span>
+        </div>
+      </div>
+
     </div>
   </div>
 
